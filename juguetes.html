@@ -1,230 +1,339 @@
-
+```html
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-<title>Documento sin t&iacute;tulo</title>
+<title>AREA DE JUGUETES - MATELLA</title>
+
 <style type="text/css">
 <!--
 body {
     background-color: #00CCFF;
 }
+
 .Estilo1 {
     font-family: "Courier New", Courier, monospace;
     font-size: 36px;
     color: #CC0099;
     font-weight: bold;
 }
+
 .Estilo2 {
     font-size: medium;
     color: #CC6600;
 }
+
 .Estilo6 {
     font-family: "Courier New", Courier, monospace;
     font-size: 16px;
     color: #CC0099;
     font-weight: bold;
 }
+
 .Estilo7 {
     font-size: medium;
     color: #660000;
     font-weight: bold;
 }
+
 .Estilo8 {
     color: #FFFFFF;
 }
+
 .Estilo10 {
     font-size: 14px;
     font-weight: bold;
     color: #FFFFFF;
 }
+
 .Estilo4 {
     font-size: 18px;
     font-weight: bold;
     color: #000000;
 }
 
-/* Estilo de los anuncios y botones */
+/* TABLA DE PRODUCTOS CENTRADA CON FONDO TENUE */
+.tabla-productos {
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #F0EAFE;
+    border: 2px solid #CC0099;
+    border-radius: 12px;
+    padding: 10px;
+    color: #000000;
+}
+
+.tabla-productos td,
+.tabla-productos th {
+    padding: 10px;
+}
+
+/* ANUNCIOS Y PROMOCIONES */
+#anuncios {
+    padding: 20px;
+    font-family: "Courier New", Courier, monospace;
+    color: #CC0099;
+}
+
+#anuncios h2,
+#carrito h2 {
+    color: #CC0099;
+}
+
 .anuncios {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
     gap: 15px;
-    margin: 25px auto;
 }
+
 .anuncio {
     flex: 1 1 200px;
-    max-width: 250px;
     padding: 15px;
-    background: #FFFFFF;
+    background-color: #EAFBFF;
     border: 2px solid #CC0099;
-    border-radius: 12px;
+    border-radius: 10px;
     color: #000000;
-    text-align: center;
-    box-shadow: 2px 3px 7px #777777;
 }
+
 .anuncio h3 {
     color: #CC0099;
 }
-.boton-pedido {
-    display: inline-block;
-    background: #CC0099;
-    color: #FFFFFF;
-    padding: 10px 12px;
-    border-radius: 6px;
-    text-decoration: none;
-    font-weight: bold;
-    margin-top: 8px;
-}
-.boton-pedido:hover {
-    background: #990066;
-}
-#anuncios {
-    padding: 15px;
-    font-family: "Courier New", Courier, monospace;
-    color: #CC0099;
-}
-#anuncios h2 {
-    color: #CC0099;
-}
+
+/* BOTÓN DE WHATSAPP */
 #carrito {
-    text-align: center;
-    margin: 25px auto;
+    padding: 20px;
+    font-family: "Courier New", Courier, monospace;
+    color: #000000;
 }
+
 #carrito button {
-    background: #CC0099;
+    background-color: #CC0099;
     color: #FFFFFF;
     padding: 12px 18px;
     border: none;
-    border-radius: 6px;
+    border-radius: 8px;
     cursor: pointer;
     font-family: "Courier New", Courier, monospace;
     font-weight: bold;
+}
+
+#carrito button:hover {
+    background-color: #990066;
 }
 -->
 </style>
 </head>
 
 <body>
+
 <p align="center" class="Estilo1">AREA DE JUGUETES</p>
 
-<p class="Estilo2">&iexcl;ENCUETRA LOS MEJORES JUGUETES DE LA REGI&Oacute;N,CON EXELENTE SERVICIO Y ENTREGAS PUNTUALES PARA LLENAR DE ALEGRIA A LOS MAS PEQUE&Ntilde;OS! </p>
+<p class="Estilo2">
+&iexcl;ENCUETRA LOS MEJORES JUGUETES DE LA REGI&Oacute;N,CON EXELENTE SERVICIO Y ENTREGAS PUNTUALES PARA LLENAR DE ALEGRIA A LOS MAS PEQUE&Ntilde;OS!
+</p>
 
-<p align="justify" data-pm-slice="1 1 []"><em><strong>&iexcl;Aqu&iacute; encontrar&aacute;s una gran variedad de juguetes para todos los gustos, seleccionados para llenar de alegr&iacute;a a los m&aacute;s peque&ntilde;os de la casa! Ofrecemos productos de calidad, un servicio confiable y entregas puntuales, para que disfrutes de una experiencia de compra segura, c&oacute;moda y satisfactoria. &iexcl;Somos una excelente opci&oacute;n para encontrar el regalo perfecto y crear momentos inolvidables!</strong></em></p>
+<p align="justify">
+<em><strong>
+&iexcl;Aqu&iacute; encontrar&aacute;s una gran variedad de juguetes para todos los gustos, seleccionados para llenar de alegr&iacute;a a los m&aacute;s peque&ntilde;os de la casa! Ofrecemos productos de calidad, un servicio confiable y entregas puntuales, para que disfrutes de una experiencia de compra segura, c&oacute;moda y satisfactoria. &iexcl;Somos una excelente opci&oacute;n para encontrar el regalo perfecto y crear momentos inolvidables!
+</strong></em>
+</p>
 
-<p class="Estilo7">Compralos yaaa !no esperes mas a meses sin intereses! </p>
+<p class="Estilo7">
+Compralos yaaa !no esperes mas a meses sin intereses!
+</p>
+
+<!-- TABLA DE PRODUCTOS -->
+<table class="tabla-productos" width="500" border="1" cellspacing="6" align="center">
+
+  <tr>
+    <th width="231" height="69" scope="col">
+      <p>
+        <img src="jueguete1.jpeg" width="130" height="150" />
+        <br /><br />
+      </p>
+    </th>
+
+    <th width="239" scope="col">
+      <img src="imagen3.jpeg" width="130" height="150" />
+    </th>
+  </tr>
+
+  <tr>
+    <td>
+      <div align="center">
+        <p align="justify">
+          <span class="Estilo6">CONEJITO DE PELUCHE</span><br />
+          Bonito y suave conejito de peluche, perfecto como compa&ntilde;ero de juegos y para regalar en cualquier ocasi&oacute;n.<br />
+          Edad sugerida: 3 a&ntilde;os en adelante<br />
+          Precio: $539.25<br />
+          Ideal para regalo.<br />
+          &iexcl;Realiza tu pedido hoy!
+        </p>
+      </div>
+    </td>
+
+    <td>
+      <div align="center">
+        <p align="justify">
+          <span class="Estilo6">PERRITO INTERACTIVO</span><br />
+          Perrito interactivo con dise&ntilde;o tierno y colorido. Ideal para entretener a los peque&ntilde;os y disfrutar de horas de juego.<br />
+          Edad sugerida: 3 a&ntilde;os en adelante<br />
+          Precio: $436.00<br />
+          &iexcl;Excelente opci&oacute;n para regalo!<br />
+          &iexcl;Realiza tu pedido hoy!
+        </p>
+      </div>
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+      <div align="center">
+        <img src="imagen4.jpeg" width="130" height="150" />
+      </div>
+    </td>
+
+    <td>
+      <div align="center">
+        <img src="imagen5.jpeg" width="130" height="150" align="middle" />
+      </div>
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+      <div align="justify">
+        <span class="Estilo6">SET DE CARS</span><br />
+        Divertido set de Cars para los peque&ntilde;os amantes de los autos. Perfecto para jugar, imaginar aventuras y coleccionar.<br />
+        Edad sugerida: 3 a&ntilde;os en adelante<br />
+        Precio: $74.99<br />
+        &iexcl;Realiza tu pedido hoy!
+      </div>
+    </td>
+
+    <td>
+      <div align="justify">
+        <span class="Estilo6">MU&Ntilde;ECO ESTILO VAQUERO</span><br />
+        Divertido mu&ntilde;eco estilo vaquero para crear historias y aventuras. Ideal para desarrollar el juego imaginativo.<br />
+        Edad sugerida: 3 a&ntilde;os en adelante<br />
+        Precio: $1,400.99<br />
+        Ideal para regalo o colecci&oacute;n.<br />
+        &iexcl;Realiza tu pedido hoy!
+      </div>
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+      <div align="center">
+        <img src="imagen6.jpeg" width="130" height="150" />
+      </div>
+    </td>
+
+    <td>
+      <div align="center">
+        <img src="imagen7.jpeg" width="130" height="150" />
+      </div>
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+      <div align="justify">
+        <span class="Estilo6">CASITA DE JUEGO</span><br />
+        Bonita casita de juego en tonos rosa y morado, perfecta para crear historias, jugar y desarrollar la imaginaci&oacute;n.<br />
+        Edad sugerida: 3 a&ntilde;os en adelante<br />
+        Precio: $897.99<br />
+        Excelente opci&oacute;n para regalo.<br />
+        &iexcl;Realiza tu pedido hoy!
+      </div>
+    </td>
+
+    <td>
+      <div align="justify">
+        <span class="Estilo6">SET DE DINOSAURIOS</span><br />
+        Set de dinosaurios ideal para peque&ntilde;os exploradores. Perfecto para crear aventuras, jugar y desarrollar la imaginaci&oacute;n.<br />
+        Edad sugerida: 3 a&ntilde;os en adelante<br />
+        Precio: $345.57.<br />
+        &iexcl;Realiza tu pedido hoy!
+      </div>
+    </td>
+  </tr>
+
+</table>
 
 <!-- ANUNCIOS Y PROMOCIONES -->
 <section id="anuncios">
-  <h2>Anuncios y promociones</h2>
+
+  <h2 align="center">Anuncios y promociones</h2>
 
   <div class="anuncios">
+
     <div class="anuncio">
       <h3>Promociones especiales</h3>
       <p>Consulta nuestras promociones y opciones de pago.</p>
-      <a class="boton-pedido" href="https://wa.me/527121906537?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20las%20promociones." target="_blank">Consultar</a>
     </div>
 
     <div class="anuncio">
       <h3>Regalos para los pequeños</h3>
       <p>Encuentra juguetes ideales para cualquier ocasión.</p>
-      <a class="boton-pedido" href="https://wa.me/527121906537?text=Hola%2C%20busco%20un%20juguete%20para%20regalo." target="_blank">Ver opciones</a>
     </div>
 
     <div class="anuncio">
       <h3>Gran variedad</h3>
       <p>Descubre juguetes para imaginar, aprender y divertirse.</p>
-      <a class="boton-pedido" href="https://wa.me/527121906537?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20los%20juguetes." target="_blank">Más información</a>
     </div>
+
   </div>
+
 </section>
 
-<table width="500" border="1" cellspacing="6">
-  <tr>
-    <th width="231" height="69" scope="col"><p><img src="jueguete1.jpeg" width="130" height="150" /><br /><br /></p></th>
-    <th width="239" scope="col"><img src="imagen3.jpeg" width="130" height="150" /></th>
-  </tr>
-  <tr>
-    <td><div align="center">
-      <p align="justify"><span class="Estilo6">CONEJITO DE PELUCHE</span><br />
-  Bonito y suave conejito de peluche, perfecto como compa&ntilde;ero de juegos y para regalar en cualquier ocasi&oacute;n.<br />
-  Edad sugerida: 3 a&ntilde;os en adelante<br />
-        Precio: $539.25<br />
-        Ideal para regalo.<br />
-&iexcl;Realiza tu pedido hoy!</p>
-      </div></td>
-    <td><div align="center">
-      <p align="justify"><span class="Estilo6">PERRITO INTERACTIVO</span><br />
-  Perrito interactivo con dise&ntilde;o tierno y colorido. Ideal para entretener a los peque&ntilde;os y disfrutar de horas de juego.<br />
-  Edad sugerida: 3 a&ntilde;os en adelante<br />
-        Precio: $436.00<br />
-&iexcl;Excelente opci&oacute;n para regalo!<br />
-&iexcl;Realiza tu pedido hoy!</p>
-      </div></td>
-  </tr>
-  <tr>
-    <td><div align="center"><img src="imagen4.jpeg" width="130" height="150" /></div></td>
-    <td><div align="center"><img src="imagen5.jpeg" width="130" height="150" align="middle" /></div></td>
-  </tr>
-  <tr>
-    <td><div align="justify"><span class="Estilo6">SET DE CARS</span><br />
-        Divertido set de Cars para los peque&ntilde;os amantes de los autos. Perfecto para jugar, imaginar aventuras y coleccionar.<br />
-        Edad sugerida: 3 a&ntilde;os en adelante<br />
-      Precio: $74.99
-      <br />
-&iexcl;Realiza tu pedido hoy!</div></td>
-    <td><div align="justify"><span class="Estilo6">MU&Ntilde;ECO ESTILO VAQUERO</span><br />
-        Divertido mu&ntilde;eco estilo vaquero para crear historias y aventuras. Ideal para desarrollar el juego imaginativo.<br />
-        Edad sugerida: 3 a&ntilde;os en adelante<br />
-      Precio: $1,400.99<br />
-      Ideal para regalo o colecci&oacute;n.<br />
-&iexcl;Realiza tu pedido hoy!</div></td>
-  </tr>
-  <tr>
-    <td><div align="center"><img src="imagen6.jpeg" width="130" height="150" /></div></td>
-    <td><div align="center"><img src="imagen7.jpeg" width="130" height="150" /></div></td>
-  </tr>
-  <tr>
-    <td><div align="justify"><span class="Estilo6">CASITA DE JUEGO</span><br />
-        Bonita casita de juego en tonos rosa y morado, perfecta para crear historias, jugar y desarrollar la imaginaci&oacute;n.<br />
-        Edad sugerida: 3 a&ntilde;os en adelante<br />
-      Precio: $897.99<br />
-      Excelente opci&oacute;n para regalo.<br />
-&iexcl;Realiza tu pedido hoy!</div></td>
-    <td><div align="justify"><span class="Estilo6">SET DE DINOSAURIOS</span><br />
-        Set de dinosaurios ideal para peque&ntilde;os exploradores. Perfecto para crear aventuras, jugar y desarrollar la imaginaci&oacute;n.<br />
-        Edad sugerida: 3 a&ntilde;os en adelante<br />
-      Precio: $345.57
-      .<br />
-&iexcl;Realiza tu pedido hoy!</div></td>
-  </tr>
-</table>
+<!-- BOTÓN PARA ENVIAR EL PEDIDO -->
+<section id="carrito" align="center">
 
-<!-- BOTÓN DE PEDIDO -->
-<section id="carrito">
-  <h2>Realiza tu pedido</h2>
-  <p>Contáctanos por WhatsApp para consultar disponibilidad.</p>
+  <h2>Tu carrito de compras</h2>
+
+  <p>Revisa tus productos antes de realizar tu pedido.</p>
+
   <button type="button" onclick="enviarPedido()">
     Enviar pedido por WhatsApp
   </button>
+
 </section>
 
 <script type="text/javascript">
 function enviarPedido() {
     var telefono = "527121906537";
-    var mensaje = "Hola, MATELLA. Quiero realizar un pedido de juguetes.";
-    var enlace = "https://wa.me/" + telefono + "?text=" + encodeURIComponent(mensaje);
+    var mensaje = "Hola, MATELLA. Quiero realizar un pedido.";
+    var enlace = "https://wa.me/" + telefono +
+        "?text=" + encodeURIComponent(mensaje);
+
     window.open(enlace, "_blank");
 }
 </script>
 
 <p align="center" class="Estilo8">&nbsp;</p>
-<p align="center" class="Estilo8">Derechos Reservados 2026 <strong>&copy;</strong> <em>MATELLA</em> A&amp;G&amp;A</p>
-<p align="center" class="Estilo8">Calle Hidalgo1,San Miguel Acambay, C.P. 50300, Estado de M&eacute;xico. Copyright &copy;2026 por Matella, S.A. de C.V.</p>
+
+<p align="center" class="Estilo8">
+Derechos Reservados 2026 <strong>&copy; </strong>
+<em>MATELLA</em><strong></strong> A&amp;G&amp;A
+</p>
+
+<p align="center" class="Estilo8">
+Calle Hidalgo1,San Miguel Acambay, C.P. 50300, Estado de M&eacute;xico.
+Copyright &copy;2026 por Matella, S.A. de C.V.
+</p>
+
 <p align="center" class="Estilo8">Nuestras Redes Sociales</p>
-<p align="center" class="Estilo8"><em>En Facebbok,Instagram,Tiktok,como: <strong>Matella.17</strong></em></p>
+
+<p align="center" class="Estilo8">
+<em>En Facebbok,Instagram,Tiktok,como: <strong>Matella.17</strong></em>
+</p>
+
 <p>&nbsp;</p>
+
 <p align="center" class="Estilo8">&nbsp;</p>
+
 </body>
 </html>
 
