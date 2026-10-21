@@ -2,113 +2,438 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-<title>Documento sin t&iacute;tulo</title>
+<title>Útiles Escolares Lumenal</title>
+
 <style type="text/css">
 <!--
 body {
-	background-color: #6666FF;
+    background-color: #6666FF;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 20px;
+    color: #222222;
 }
+
 .Estilo2 {
-	font-size: 36px;
-	color: #336633;
+    font-size: 36px;
+    color: #336633;
 }
+
 .Estilo3 {
-	color: #336666;
-	font-weight: bold;
+    color: #336666;
+    font-weight: bold;
 }
+
 .Estilo4 {
-	font-size: 18px;
-	font-weight: bold;
+    font-size: 18px;
+    font-weight: bold;
 }
+
 .Estilo5 {
-	font-size: 18px;
-	font-style: italic;
+    font-size: 18px;
+    font-style: italic;
 }
-.Estilo10 {font-size: 14px; font-weight: bold; color: #FFFFFF; }
-.Estilo7 {	font-size: medium;
-	color: #CC6600;
+
+.Estilo10 {
+    font-size: 14px;
+    font-weight: bold;
+    color: #FFFFFF;
 }
-.Estilo8 {font-size: 18px;
-	font-weight: bold;
-	color: #000000;
+
+.Estilo7 {
+    font-size: medium;
+    color: #660000;
+    font-weight: bold;
 }
-.Estilo7 {font-size: medium; color: #660000; font-weight: bold; }
-.Estilo9 {color: #CC0000}
+
+.Estilo8 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.Estilo9 {
+    color: #CC0000;
+    font-weight: bold;
+}
+
+.contenedor {
+    max-width: 950px;
+    margin: 0 auto;
+    background-color: #FFFFFF;
+    padding: 22px;
+    border-radius: 12px;
+}
+
+.encabezado {
+    text-align: center;
+    padding: 15px;
+    background-color: #E8F1E4;
+    border-radius: 10px;
+}
+
+.anuncio {
+    background-color: #FFF0D9;
+    border: 2px solid #E5A54B;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.anuncio h2 {
+    color: #8A3D00;
+    margin: 5px 0;
+}
+
+.anuncio p {
+    font-size: 16px;
+    margin: 8px 0;
+}
+
+.boton {
+    display: inline-block;
+    background-color: #218838;
+    color: #FFFFFF;
+    padding: 10px 16px;
+    margin-top: 8px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.boton:hover {
+    background-color: #176B2B;
+}
+
+.boton-pedido {
+    display: inline-block;
+    background-color: #25D366;
+    color: #FFFFFF;
+    padding: 10px 14px;
+    margin: 10px 0;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.tabla-productos {
+    width: 100%;
+    max-width: 700px;
+    margin: 20px auto;
+    border: 2px solid #B9C9E8;
+    border-collapse: separate;
+    border-spacing: 8px;
+    background-color: #F0F3FF;
+    border-radius: 10px;
+    padding: 8px;
+}
+
+.tabla-productos td,
+.tabla-productos th {
+    background-color: #FFFFFF;
+    padding: 12px;
+    border: 1px solid #D4DDF5;
+    border-radius: 6px;
+    vertical-align: top;
+}
+
+.tabla-productos img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.nombre-producto {
+    color: #CC0000;
+    font-weight: bold;
+}
+
+.carrito {
+    text-align: center;
+    background-color: #E8F1E4;
+    padding: 18px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.pie {
+    text-align: center;
+    margin-top: 25px;
+    line-height: 1.7;
+}
+
+.whatsapp-flotante {
+    position: fixed;
+    right: 18px;
+    bottom: 18px;
+    background-color: #25D366;
+    color: #FFFFFF;
+    padding: 13px 17px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 3px 8px #555555;
+    z-index: 1000;
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        margin: 5px;
+    }
+
+    .contenedor {
+        padding: 10px;
+    }
+
+    .Estilo2 {
+        font-size: 27px;
+    }
+
+    .tabla-productos {
+        width: 100%;
+        border-spacing: 3px;
+        padding: 3px;
+    }
+
+    .tabla-productos td,
+    .tabla-productos th {
+        padding: 5px;
+        font-size: 13px;
+    }
+
+    .whatsapp-flotante {
+        right: 8px;
+        bottom: 8px;
+        padding: 10px 12px;
+    }
+}
 -->
-</style></head>
+</style>
+</head>
 
 <body>
-<div align="center" class="Estilo3"><span class="Estilo2">UTILES ESCOLARES LUMENAL</span></div>
-<p align="justify" class="Estilo4">&iexcl; En Lumenal encontrar&aacute;s una gran variedad de &uacute;tiles escolares para cada etapa de aprendizaje. Desde cuadernos y l&aacute;pices hasta materiales para dar vida a tus ideas. &iexcl;Todo lo que necesitas para aprender, crear y destacar, en un solo lugar!</p>
-<p align="justify" class="Estilo7">&lt;&lt;HASTA 6 MESES SIN INTERESES EN TODA LA TIENDA. COMPRA M&Iacute;NIMA 2499 MXN. VER M&Aacute;S&gt;&gt;</p>
-<p align="justify" class="Estilo5">&iexcl;Calidad, variedad y todo para brillar en la escuela!</p>
-<table width="572" border="1" cellspacing="6">
-  <tr>
-    <th width="295" scope="col"><img src="imagen39.jpeg" width="180" height="180" /></th>
-    <th width="247" scope="col"><img src="imagen40.jpeg" width="188" height="223" /></th>
-  </tr>
-  <tr>
-    <td><div align="justify"><span class="Estilo9">CUADERNO ESCOLAR</span><br />
-        Ideal para apuntes, tareas, ejercicios y actividades escolares. Pr&aacute;ctico para el uso diario.<br />
-      Precio por pieza: $25<br />
-      Precio de mayoreo: $18 por pieza<br />
-    Compra m&iacute;nima de mayoreo: 12 piezas</div></td>
-    <td><div align="justify"><span class="Estilo9">TIJERAS ESCOLARES</span><br />
-        Pr&aacute;cticas y ligeras, ideales para recortar papel, cartulina y realizar actividades escolares.<br />
-      Precio por pieza: $12<br />
-      Precio de mayoreo: $9 por pieza<br />
-    Compra m&iacute;nima de mayoreo: 12 piezas</div></td>
-  </tr>
-  <tr>
-    <td><img src="imagen41.jpeg" width="233" height="233" /></td>
-    <td><img src="imagen42.jpeg" width="201" height="218" /></td>
-  </tr>
-  <tr>
-    <td><div align="justify"><span class="Estilo9">CARPETA ESCOLAR</span><br />
-        Pr&aacute;ctica y funcional para guardar, organizar y proteger hojas, tareas y documentos escolares. Ideal para mantener los trabajos ordenados durante todo el ciclo escolar.<br />
-      Precio por pieza: $25<br />
-      Precio de mayoreo: $18 por pieza<br />
-    Compra m&iacute;nima de mayoreo: 12 piezas</div></td>
-    <td><div align="justify"><span class="Estilo9">REGLA ESCOLAR</span><br />
-        Pr&aacute;ctica para medir, trazar l&iacute;neas y realizar trabajos escolares con precisi&oacute;n.<br />
-      Precio por pieza: $8<br />
-      Precio de mayoreo: $5 por pieza<br />
-    Compra m&iacute;nima de mayoreo: 12 piezas</div></td>
-  </tr>
-  <tr>
-    <td><img src="imagen43.jpeg" width="187" height="221" /></td>
-    <td><img src="imagen44.jpeg" width="189" height="220" /></td>
-  </tr>
-  <tr>
-    <td><div align="justify"><span class="Estilo9">L&Aacute;PIZ ESCOLAR</span><br />
-      Indispensable para escribir, dibujar y realizar tareas y actividades escolares.<br />
-      Precio por pieza: $4<br />
-      Precio de mayoreo: $2.50 por pieza<br />
-    Compra m&iacute;nima de mayoreo: 24 piezas</div></td>
-    <td><div align="justify"><span class="Estilo9">SACAPUNTAS</span><br />
-        Compacto y pr&aacute;ctico para mantener los l&aacute;pices siempre listos para tareas y actividades.<br />
-      Precio por pieza: $7<br />
-      Precio de mayoreo: $4 por pieza<br />
-    Compra m&iacute;nima de mayoreo: 24 piezas</div></td>
-  </tr>
+
+<div class="contenedor">
+
+<div class="encabezado">
+    <div class="Estilo3">
+        <span class="Estilo2">ÚTILES ESCOLARES LUMENAL</span>
+    </div>
+</div>
+
+<p align="justify" class="Estilo4">
+¡En Lumenal encontrarás una gran variedad de útiles escolares para cada etapa de aprendizaje. Desde cuadernos y lápices hasta materiales para dar vida a tus ideas. ¡Todo lo que necesitas para aprender, crear y destacar, en un solo lugar!
+</p>
+
+<div class="anuncio">
+    <h2>¡PROMOCIÓN ESPECIAL!</h2>
+    <p><strong>Hasta 6 meses sin intereses en toda la tienda.</strong></p>
+    <p>Compra mínima de $2,499 MXN.</p>
+    <p>Equipa tu escuela con variedad y buenos precios.</p>
+
+    <a class="boton"
+       href="https://wa.me/527121906537?text=Hola%2C%20quiero%20informacion%20sobre%20la%20promocion%20de%20Lumenal">
+       Consultar promoción
+    </a>
+</div>
+
+<p align="center" class="Estilo5">
+¡Calidad, variedad y todo para brillar en la escuela!
+</p>
+
+<h2 align="center">Nuestros productos</h2>
+
+<table class="tabla-productos" border="1" cellspacing="6">
+
+<tr>
+    <th scope="col">
+        <img src="imagen39.jpeg" width="180" height="180" alt="Cuaderno escolar" />
+    </th>
+
+    <th scope="col">
+        <img src="imagen40.jpeg" width="188" height="223" alt="Tijeras escolares" />
+    </th>
+</tr>
+
+<tr>
+    <td align="justify">
+        <span class="nombre-producto">CUADERNO ESCOLAR</span><br />
+        Ideal para apuntes, tareas, ejercicios y actividades escolares. Práctico para el uso diario.<br />
+        Precio por pieza: $25<br />
+        Precio de mayoreo: $18 por pieza<br />
+        Compra mínima de mayoreo: 12 piezas<br />
+
+        <div align="center">
+            <a class="boton-pedido"
+               href="https://wa.me/527121906537?text=Hola%2C%20quiero%20pedir%20cuadernos%20escolares">
+               Pedir por WhatsApp
+            </a>
+        </div>
+    </td>
+
+    <td align="justify">
+        <span class="nombre-producto">TIJERAS ESCOLARES</span><br />
+        Prácticas y ligeras, ideales para recortar papel, cartulina y realizar actividades escolares.<br />
+        Precio por pieza: $12<br />
+        Precio de mayoreo: $9 por pieza<br />
+        Compra mínima de mayoreo: 12 piezas<br />
+
+        <div align="center">
+            <a class="boton-pedido"
+               href="https://wa.me/527121906537?text=Hola%2C%20quiero%20pedir%20tijeras%20escolares">
+               Pedir por WhatsApp
+            </a>
+        </div>
+    </td>
+</tr>
+
+<tr>
+    <td>
+        <img src="imagen41.jpeg" width="233" height="233" alt="Carpeta escolar" />
+    </td>
+
+    <td>
+        <img src="imagen42.jpeg" width="201" height="218" alt="Regla escolar" />
+    </td>
+</tr>
+
+<tr>
+    <td align="justify">
+        <span class="nombre-producto">CARPETA ESCOLAR</span><br />
+        Práctica y funcional para guardar, organizar y proteger hojas, tareas y documentos escolares. Ideal para mantener los trabajos ordenados durante todo el ciclo escolar.<br />
+        Precio por pieza: $25<br />
+        Precio de mayoreo: $18 por pieza<br />
+        Compra mínima de mayoreo: 12 piezas<br />
+
+        <div align="center">
+            <a class="boton-pedido"
+               href="https://wa.me/527121906537?text=Hola%2C%20quiero%20pedir%20carpetas%20escolares">
+               Pedir por WhatsApp
+            </a>
+        </div>
+    </td>
+
+    <td align="justify">
+        <span class="nombre-producto">REGLA ESCOLAR</span><br />
+        Práctica para medir, trazar líneas y realizar trabajos escolares con precisión.<br />
+        Precio por pieza: $8<br />
+        Precio de mayoreo: $5 por pieza<br />
+        Compra mínima de mayoreo: 12 piezas<br />
+
+        <div align="center">
+            <a class="boton-pedido"
+               href="https://wa.me/527121906537?text=Hola%2C%20quiero%20pedir%20reglas%20escolares">
+               Pedir por WhatsApp
+            </a>
+        </div>
+    </td>
+</tr>
+
+<tr>
+    <td>
+        <img src="imagen43.jpeg" width="187" height="221" alt="Lápiz escolar" />
+    </td>
+
+    <td>
+        <img src="imagen44.jpeg" width="189" height="220" alt="Sacapuntas" />
+    </td>
+</tr>
+
+<tr>
+    <td align="justify">
+        <span class="nombre-producto">LÁPIZ ESCOLAR</span><br />
+        Indispensable para escribir, dibujar y realizar tareas y actividades escolares.<br />
+        Precio por pieza: $4<br />
+        Precio de mayoreo: $2.50 por pieza<br />
+        Compra mínima de mayoreo: 24 piezas<br />
+
+        <div align="center">
+            <a class="boton-pedido"
+               href="https://wa.me/527121906537?text=Hola%2C%20quiero%20pedir%20lapices%20escolares">
+               Pedir por WhatsApp
+            </a>
+        </div>
+    </td>
+
+    <td align="justify">
+        <span class="nombre-producto">SACAPUNTAS</span><br />
+        Compacto y práctico para mantener los lápices siempre listos para tareas y actividades.<br />
+        Precio por pieza: $7<br />
+        Precio de mayoreo: $4 por pieza<br />
+        Compra mínima de mayoreo: 24 piezas<br />
+
+        <div align="center">
+            <a class="boton-pedido"
+               href="https://wa.me/527121906537?text=Hola%2C%20quiero%20pedir%20sacapuntas">
+               Pedir por WhatsApp
+            </a>
+        </div>
+    </td>
+</tr>
+
 </table>
-<p>PRECIOS ESPECIALES PARA MAYOREO Y REVENTA.<br />
-Pregunta por disponibilidad y arma tu pedido con los productos que necesites.</p>
-<p align="left"><span class="Estilo7"><span class="Estilo8"><span class="Estilo10">Cont&aacute;ctanos:Por correo electr&oacute;nico: <em>atencion@matella.com.mx</em> Tel<em>:712 428 56 34</em></span></span></span></p>
-<p align="left">AGREGA TU PEDIDO AL CARRITO</p>
-<form id="form1" name="form1" method="post" action="">
-  <label>
-  <input type="submit" name="Submit" value="Enviar" />
-  </label>
-</form>
-<p align="left">&nbsp;</p>
-<p align="center">Derechos Reservados 2026 <strong data-sfc-cp="" jsaction="" jscontroller="tP2kf#s32ZS" data-sfc-root="ep" data-epip="" jsuid="fDr0Ee_9">&copy; </strong><em>MATELLA</em><strong data-sfc-cp="" jsaction="" jscontroller="tP2kf#s32ZS" data-sfc-root="ep" data-epip="" jsuid="fDr0Ee_9">
-  <!--TgQPHd|||[]-->
-</strong> A&amp;G&amp;A</p>
-<p align="center">Calle Hidalgo1,San Miguel Acambay, C.P. 50300, Estado de M&eacute;xico. Copyright &copy;2026 por Matella, S.A. de C.V.</p>
-<p align="center">Nuestras Redes Sociales</p>
-<p align="center"><em>En Facebbok,Instagram,Tiktok,como: <strong>Matella.17 </strong></em></p>
-<p>&nbsp;</p>
-<p align="justify" class="Estilo5">&nbsp;</p>
+
+<div class="anuncio">
+    <h2>¡EQUIPA TU LISTA ESCOLAR!</h2>
+    <p>Encuentra materiales para tus tareas, proyectos y actividades escolares.</p>
+    <p><strong>Precios especiales para mayoreo y reventa.</strong></p>
+
+    <a class="boton"
+       href="https://wa.me/527121906537?text=Hola%2C%20quiero%20consultar%20precios%20de%20mayoreo%20de%20Lumenal">
+       Solicitar precios de mayoreo
+    </a>
+</div>
+
+<p align="center">
+<strong>PRECIOS ESPECIALES PARA MAYOREO Y REVENTA.</strong><br />
+Pregunta por disponibilidad y arma tu pedido con los productos que necesites.
+</p>
+
+<div class="carrito">
+    <h2>Realiza tu pedido</h2>
+    <p>Contáctanos para consultar disponibilidad y hacer tu pedido.</p>
+
+    <a class="boton-pedido"
+       href="https://wa.me/527121906537?text=Hola%2C%20quiero%20realizar%20un%20pedido%20de%20utiles%20escolares%20Lumenal">
+       Hacer pedido por WhatsApp
+    </a>
+</div>
+
+<p align="left" class="Estilo10" style="background-color:#336666; padding:12px;">
+Contáctanos por correo electrónico:
+<em>atencion@matella.com.mx</em><br />
+Teléfono: <em>712 190 6537</em>
+</p>
+
+<div class="pie">
+
+    <p>
+    Derechos Reservados 2026 © <em>MATELLA</em> A&amp;G&amp;A
+    </p>
+
+    <p>
+    Calle Hidalgo 1, San Miguel Acambay, C.P. 50300,
+    Estado de México.<br />
+    Copyright © 2026 por Matella, S.A. de C.V.
+    </p>
+
+    <p><strong>Nuestras redes sociales</strong></p>
+
+    <p>
+    En Facebook, Instagram y TikTok como:
+    <strong>Matella.17</strong>
+    </p>
+
+</div>
+
+</div>
+
+<a class="whatsapp-flotante"
+   href="https://wa.me/527121906537?text=Hola%2C%20quiero%20informacion%20sobre%20los%20productos%20de%20Lumenal"
+   target="_blank">
+   WhatsApp
+</a>
+
 </body>
 </html>
