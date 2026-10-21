@@ -1,240 +1,132 @@
-<!DOCTYPE html>
-<html lang="es">
+```html
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>LACTANCIA - MATELLA</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>AREA DE JUGUETES - MATELLA</title>
 
-<style>
-* {
-    box-sizing: border-box;
-}
-
+<style type="text/css">
 body {
+    background-color: #00CCFF;
     margin: 0;
-    padding: 20px;
-    background-color: #FF99CC;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #4b2638;
+    padding: 15px;
+    font-family: Arial, sans-serif;
 }
 
-.encabezado {
-    text-align: center;
-    padding: 20px 10px;
-}
-
-.encabezado h1 {
-    margin: 0;
-    font-family: "Courier New", monospace;
+.Estilo1 {
+    font-family: "Courier New", Courier, monospace;
     font-size: 36px;
-    font-style: italic;
+    color: #CC0099;
     font-weight: bold;
-    color: #7d2450;
-}
-
-.encabezado p {
-    max-width: 850px;
-    margin: 15px auto;
-    font-size: 17px;
-    line-height: 1.7;
-}
-
-.anuncios {
-    max-width: 1100px;
-    margin: 25px auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 18px;
-}
-
-.anuncio {
-    flex: 1 1 250px;
-    max-width: 340px;
-    padding: 20px;
     text-align: center;
-    background-color: #fff0f6;
-    border: 1px solid #efbad0;
-    border-radius: 15px;
-    box-shadow: 0 4px 10px rgba(95, 35, 61, 0.12);
 }
 
-.anuncio h2 {
-    margin-top: 0;
-    color: #922b5d;
-    font-size: 21px;
+.Estilo2 {
+    font-size: medium;
+    color: #CC6600;
 }
 
-.anuncio p {
-    font-size: 15px;
+.Estilo6 {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 16px;
+    color: #CC0099;
+    font-weight: bold;
+}
+
+.Estilo7 {
+    font-size: medium;
+    color: #660000;
+    font-weight: bold;
+}
+
+.Estilo8 {
+    color: #FFFFFF;
+}
+
+.Estilo10 {
+    font-size: 14px;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+.Estilo4 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #000000;
+}
+
+/* TABLA DE PRODUCTOS */
+.tabla-productos {
+    width: 500px;
+    max-width: 100%;
+    margin: 25px auto;
+    border: 2px solid #CC0099;
+    border-collapse: separate;
+    border-spacing: 6px;
+    background-color: #E6F8FF;
+}
+
+.tabla-productos th,
+.tabla-productos td {
+    width: 50%;
+    padding: 12px;
+    border: 1px solid #D6B5CF;
+    background-color: #FFF9FC;
+    vertical-align: top;
+}
+
+.tabla-productos th img,
+.tabla-productos td img {
+    max-width: 100%;
+    height: 150px;
+    object-fit: contain;
+}
+
+.tabla-productos p {
     line-height: 1.5;
 }
 
-.boton {
-    display: inline-block;
-    margin-top: 10px;
-    padding: 11px 18px;
-    background-color: #922b5d;
-    color: white;
-    text-decoration: none;
-    border-radius: 7px;
-    font-weight: bold;
-}
-
-.boton:hover {
-    background-color: #6f1943;
-}
-
-.seccion-productos {
-    max-width: 1150px;
-    margin: 35px auto;
+/* ANUNCIOS */
+#anuncios {
+    max-width: 1000px;
+    margin: 30px auto;
     padding: 20px;
-    background-color: #fff0f6;
-    border: 1px solid #efbad0;
-    border-radius: 15px;
-    box-shadow: 0 5px 15px rgba(95, 35, 61, 0.15);
+    font-family: "Courier New", Courier, monospace;
+    color: #CC0099;
+    background-color: #E6F8FF;
+    border: 2px solid #CC0099;
+    border-radius: 10px;
 }
 
-.seccion-productos h2 {
+#anuncios h2,
+#carrito h2 {
     text-align: center;
-    color: #7d2450;
-    margin-top: 5px;
-    margin-bottom: 25px;
+    color: #CC0099;
 }
 
-.tabla-productos {
-    width: 100%;
-    margin: 0 auto;
-    border-collapse: separate;
-    border-spacing: 12px;
+.anuncios {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.anuncio {
+    flex: 1 1 200px;
+    padding: 15px;
+    background-color: #FFF9FC;
+    border: 2px solid #CC0099;
+    border-radius: 8px;
+    color: #000000;
     text-align: center;
 }
 
-.tabla-productos td {
-    width: 33.33%;
-    padding: 18px 12px;
-    vertical-align: top;
-    background-color: #ffffff;
-    border: 1px solid #f0c6d8;
-    border-radius: 12px;
-}
-
-.tabla-productos img {
-    width: 120px;
-    height: 140px;
-    object-fit: contain;
-    display: block;
-    margin: 0 auto 12px;
-}
-
-.nombre-producto {
-    color: #7d2450;
-    font-weight: bold;
-    font-size: 16px;
-}
-
-.descripcion {
-    font-size: 14px;
-    line-height: 1.6;
-}
-
-.precio {
-    font-size: 18px;
-    font-weight: bold;
-    color: #922b5d;
-}
-
-.pie {
-    margin-top: 35px;
-    padding: 25px 10px;
+/* BOTON DE PEDIDO */
+#carrito {
+    max-width: 600px;
+    margin: 25px auto;
+    padding: 20px;
     text-align: center;
-    background-color: #fce4ef;
-    border-radius: 12px;
-    line-height: 1.8;
-}
-
-.pie p {
-    margin: 6px 0;
-}
-
-.pie a {
-    color: #7d2450;
-    font-weight: bold;
-    text-decoration: none;
-}
-
-@media (max-width: 700px) {
-    body {
-        padding: 10px;
-    }
-
-    .encabezado h1 {
-        font-size: 29px;
-    }
-
-    .seccion-productos {
-        padding: 8px;
-        overflow-x: auto;
-    }
-
-    .tabla-productos {
-        border-spacing: 6px;
-    }
-
-    .tabla-productos td {
-        padding: 10px 6px;
-        min-width: 145px;
-    }
-
-    .tabla-productos img {
-        max-width: 100%;
-        height: 120px;
-    }
-
-    .nombre-producto {
-        font-size: 14px;
-    }
-
-    .descripcion {
-        font-size: 12px;
-    }
-
-    .precio {
-        font-size: 16px;
-    }
-}
-</style>
-</head>
-
-<body>
-
-<header class="encabezado">
-    <h1>LACTANCIA</h1>
-
-    <p>
-        ¡La página favorita de las mamás mexicanas! Encuentra todo lo que
-        necesitas para consentir, cuidar y acompañar a tu bebé en cada etapa
-        de su crecimiento, siempre en un solo lugar.
-    </p>
-
-    <p>
-        ¡Todo para tu bebé! Variedad, calidad y confianza en un solo espacio.
-    </p>
-</header>
-
-<section class="anuncios">
-    <div class="anuncio">
-        <h2>¡Todo para tu bebé!</h2>
-        <p>Encuentra productos para acompañar a tu pequeño durante sus primeros meses.</p>
-        <a class="boton" href="#productos">Ver productos</a>
-    </div>
-
-    <div class="anuncio">
-        <h2>Cuida a tu pequeño</h2>
-        <p>Descubre artículos pensados para brindar comodidad y cuidado a tu bebé.</p>
-        <a class="boton" href="#productos">Conocer productos</a>
-    </div>
-
-    <div class="anuncio">
-        <h2>¡Haz tu pedido!</h2>
-        <p>Comunícate con nosotros por WhatsApp para consultar
+    background-color: #E6F8FF;
+    border: 2
+    
