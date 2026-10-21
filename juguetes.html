@@ -112,6 +112,84 @@ body {
 <p>&nbsp;</p>
 <p></p>
 <p align="center" class="Estilo8">&nbsp;</p>
+	<!-- ANUNCIOS Y PROMOCIONES -->
+<section id="anuncios">
+  <h2>Anuncios y promociones</h2>
+
+  <div class="anuncios">
+    <div class="anuncio">
+      <h3>Promociones especiales</h3>
+      <p>Consulta nuestras promociones y opciones de pago.</p>
+    </div>
+
+    <div class="anuncio">
+      <h3>Regalos para los pequeños</h3>
+      <p>Encuentra juguetes ideales para cualquier ocasión.</p>
+    </div>
+
+    <div class="anuncio">
+      <h3>Gran variedad</h3>
+      <p>Descubre juguetes para imaginar, aprender y divertirse.</p>
+    </div>
+  </div>
+</section>
+
+<!-- BOTÓN PARA ENVIAR EL PEDIDO -->
+<section id="carrito">
+  <h2>Tu carrito de compras</h2>
+  <p>Revisa tus productos antes de realizar tu pedido.</p>
+
+  <button type="button" onclick="enviarPedido()">
+    Enviar pedido por WhatsApp
+  </button>
+</section>
+
+<style>
+#anuncios {
+  padding: 20px;
+  font-family: "Courier New", monospace;
+  color: #CC0099;
+}
+
+#anuncios h2 {
+  color: #CC0099;
+}
+
+.anuncios {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.anuncio {
+  flex: 1 1 200px;
+  padding: 15px;
+  background: #00CCFF;
+  border: 2px solid #CC0099;
+  color: #000;
+}
+
+#carrito button {
+  background: #CC0099;
+  color: white;
+  padding: 12px 18px;
+  border: none;
+  cursor: pointer;
+  font-family: "Courier New", monospace;
+  font-weight: bold;
+}
+</style>
+
+<script>
+function enviarPedido() {
+  const telefono = "527124285634";
+  const mensaje = "Hola, MATELLA. Quiero realizar un pedido.";
+  const enlace = "https://wa.me/" + telefono +
+    "?text=" + encodeURIComponent(mensaje);
+
+  window.open(enlace, "_blank");
+}
+</script>
 </body>
 
 </html>
